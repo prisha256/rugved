@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="my_robot">
+    <!-- Reference to the URDF generated from the Xacro file -->
+    <static>false</static>
+
+    <link name="base_link">
+      <collision>
+        <geometry>
+          <!-- The robot's geometry (from Xacro/URDF) will be used, we don't redefine it here -->
+          <box>
+            <size>0.4 0.3 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual>
+        <geometry>
+          <box>
+            <size>0.4 0.3 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.6 1.0</ambient>
+          <diffuse>0.6 0.6 0.6 1.0</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <!-- You can add other Gazebo-specific elements here, such as sensors or plugins -->
+
+  </model>
+</sdf>
